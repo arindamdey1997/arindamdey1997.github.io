@@ -25,6 +25,13 @@ button {
   text-decoration: none;
   text-transform: uppercase;
 }
+#a4 {
+  background-color: #04327c;
+  color: white;
+  padding: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 button:hover, a:hover {
   opacity: 0.7;
