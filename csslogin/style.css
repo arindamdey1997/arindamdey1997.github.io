@@ -25,7 +25,13 @@ button {
   font-size: 18px;
   border-radius:12px;
 }
-
+#a1 {
+  background-color: #04327c;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 a {
   text-decoration: none;
   font-size: 22px;
