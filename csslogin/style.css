@@ -7,7 +7,34 @@
 background-color: #004d99;
 }
 
-utton:hover, a:hover {
+.title {
+  color: grey;
+  font-size: 28px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000066;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-size: 18px;
+  border-radius:12px;
+}
+
+#a1 {
+  background-color: #04327c;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+button:hover, a:hover {
   opacity: 0.7;
 	border-radius:12px;
 }
