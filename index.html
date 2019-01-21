@@ -10,6 +10,20 @@
 		.card2{
 			background-color:#bfbfbf;
 		}
+		#progressbar {
+  background-color: black;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+
+#progressbar>div {
+  background-color: orange;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
 		body{
 		 background-image: url("https://www.jooomshaper.com/data/out/12/IMG_556044.jpg");
 		}
@@ -73,8 +87,8 @@
 <img src="/c.png" width="50" height="50" >
 <img src="/sql.png" width="50" height="50" >
 <img src="/c++.png" width="50" height="50" ></br>
-<div class="w3-light-grey">
-  <div class="w3-green" style="height:24px;width:40%"></div>
+<div id="progressbar">
+  <div></div>
 </div>
 </p>
 
