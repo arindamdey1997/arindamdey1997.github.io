@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="csslogin/style.css">
+
+    
+    
+    
+  </head>
+  <body>
+  <body class="align">
+      
+   <center>
+       <div style="background-color: black" class="site__container" >
+
+           
+                   
+           
+               <form> 
+                   <div class="arin">
+                       <font size="5" face="Courier New" >
+
+               
+               <table>
+                   <tr>
+                       <td>
+                           NAME:
+                       </td>
+                         <td>
+                           ARINDAM DEY
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           CONTACT NO:
+                       </td>
+                       <td>
+                           8013106576
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           EMAIL ID:
+                       </td>
+                       <td>
+                           arincool58@gmail.com
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           ADDRESS
+                       </td>
+                       <td>
+                          DUM DUM CANTONMENT,KOLKATA-700028
+                       </td>
+                   </tr>
+                   
+                   
+               </table>
+                       </font>
+                   </div>
+               
+      
+      
+      
+    
+      </form>
+
+
+    </div>
+
+  </div>
+  <p>
+         <div style="background-color: buttonface" class="site__container1" >
+             
+<font size="5" face="Courier New" >
+
+               
+               <table>
+                   <tr>
+                       <td>
+                           CLASS X:
+                       </td>
+                         <td>
+                           73.40(ST.STEPHENS SCHOOL)
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           CLASS XII:
+                       </td>
+                       <td>
+                           77.50(ST.STEPHENS SCHOOL)
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           BTECH(CSE):
+                       </td>
+                       <td>
+                           7.07(BP PODDAR INSTITUTE OF MANAGEMENT AND TECHNOLOGY)
+                       </td>
+                   </tr>
+               </table>
+</font>
+
+         </div>
+  <br/>
+<div style="background-color: #1281dc" class="site__container2">
+    <font size="5" face="Courier New" >
+
+    
+       <table>
+                   <tr>
+                       <td>
+                           CORE JAVA:
+                       </td>
+                         <td>
+                           85%
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                         PL/SQL
+                       </td>
+                       <td>
+                           80%
+                       </td>
+                   </tr>
+                   <tr>
+                       <td>
+                           C
+                       </td>
+                       <td>
+                           80%
+                       </td>
+                   </tr>
+               </table>
+    </FONT>
+</div>
+</center>
+    </body>
+              
+    
+  
+</html>
