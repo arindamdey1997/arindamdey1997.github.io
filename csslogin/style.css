@@ -7,43 +7,57 @@
 background-color: #004d99;
 }
 
-.title {
-  color: grey;
-  font-size: 28px;
-}
-
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000066;
-  text-align: center;
-  cursor: pointer;
-  width: 40%;
-  font-size: 18px;
-  border-radius:12px;
-}
-#a1 {
-  background-color: #04327c;
-  color: white;
-  padding: 1em 1.5em;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: #000066;
-}
-
-button:hover, a:hover {
+utton:hover, a:hover {
   opacity: 0.7;
 	border-radius:12px;
 }
-ul {
- list-style-type: square;
- list-style-position: outside;
- list-style-image: none;
+.parent {
+  text-align: center;
+}
+.parent > ul {
+  display: inline-block;
+}
+h1 {
+  text-shadow: 2px 2px #04118c;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+/* Top right text */
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
