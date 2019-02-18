@@ -26,6 +26,7 @@
 width:100%;
 background-color:#b300b3;
 color:white;
+height:100px;
 }
 .container{
 width:50%;
@@ -88,6 +89,7 @@ padding-right:3px;
 #pill1{
     background:#f2f2f2;
     width:500px;
+    height:70px;
 }
 .pills>.nav-pills > .active > a, .nav-pills > .active > a:hover {
     background: #e6e6e6;
