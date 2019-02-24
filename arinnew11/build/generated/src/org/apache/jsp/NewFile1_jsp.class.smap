@@ -1,0 +1,12 @@
+SMAP
+NewFile1_jsp.java
+JSP
+*S JSP
+*F
++ 0 NewFile1.jsp
+NewFile1.jsp
+*L
+2,11:45
+13,2:56,3
+15,4:62
+*E
