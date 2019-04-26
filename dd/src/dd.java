@@ -71,7 +71,7 @@ public class dd {
         String message = "<i>Greetings!</i><br>";
         message += "<b>Wish you a nice day!</b><br>";
         message += "<font color=red>Duke</font>";
-        message +="<a href='https://www.w3schools.com/action_page.php?fname=aa&lname=ff'>Click here</a>";
+        message +="<a href='http://localhost:8015/arin/param.jsp?name=aa'>Click here</a>";
  
         dd mailer = new dd();
  

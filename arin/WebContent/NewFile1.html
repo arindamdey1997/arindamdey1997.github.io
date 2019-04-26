@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+
+<html>
+
+ 
+
+ 
+
+<head>
+
+ 
+
+ 
+
+<title>BMW Retail Marketing Demo</title>
+
+ 
+
+ 
+
+<meta charset="utf-8">
+
+ 
+
+ 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+
+ 
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+ 
+
+ 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+ 
+
+ 
+
+<link rel="stylesheet" type="text/css" href="https://10.6.3.9/nl/jsp/Retail/Retail/css/header.css">
+
+ 
+
+ 
+
+<link rel="stylesheet" type="text/css" href="https://10.6.3.9/nl/jsp/Retail/Retail/css/footer.css">
+
+ 
+
+ 
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ 
+
+ 
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+ 
+
+ 
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+ 
+
+ 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+ 
+
+ 
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+ 
+
+ 
+
+<style>
+
+ 
+
+ 
+
+.container {
+
+ 
+
+ 
+
+ 
+
+    width: 1800px;
+
+ 
+
+ 
+
+    padding-right: 35%;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.header {
+
+ 
+
+ 
+
+ 
+
+    height: 140px;
+
+ 
+
+ 
+
+    min-height: 12px;
+
+ 
+
+ 
+
+    max-height: 140px;
+
+ 
+
+ 
+
+    margin-left: 15%;
+
+ 
+
+ 
+
+    margin-right: 14%;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.tab-content{
+
+ 
+
+ 
+
+padding-left:0px;
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+#customers {
+
+ 
+
+ 
+
+  font-family: "bmwTypeWebBoldAll","Arial","Helvetica","sans-serif";
+
+ 
+
+ 
+
+  font-weight: normal;
+
+ 
+
+ 
+
+ 
+
+  border-collapse: collapse;
+
+ 
+
+ 
+
+  width: 100%;
+
+ 
+
+ 
+
+  border:1px solid black !important;
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+#customer thead{
+
+ 
+
+ 
+
+height:1px;
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+#customers td{
+
+ 
+
+ 
+
+font-family: "bmwTypeWebBoldAll","Arial","Helvetica","sans-serif";
+
+ 
+
+ 
+
+  font-weight: normal;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+#customers th {
+
+ 
+
+ 
+
+  padding-top: 12px;
+
+ 
+
+ 
+
+  padding-bottom: 12px;
+
+ 
+
+ 
+
+  text-align: left;
+
+ 
+
+ 
+
+  background-color: #1c69d4;
+
+ 
+
+ 
+
+  color: white;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+#customers tr {
+
+ 
+
+ 
+
+  border:1px solid white;
+
+ 
+
+ 
+
+   font-family: "bmwTypeWebBoldAll","Arial","Helvetica","sans-serif";
+
+ 
+
+ 
+
+  font-weight: normal;
+
+ 
+
+ 
+
+}
+
+ 
+
+#col
+
+{
+
+  height:5px;
+
+}
+
+ 
+
+.btn-info:hover {
+
+ 
+
+ 
+
+    color: #fff;
+
+ 
+
+ 
+
+    background-color: #4D4D4D;
+
+ 
+
+ 
+
+    border-color: #4D4D4D;
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+.btn-info {
+
+ 
+
+ 
+
+    color: #fff;
+
+ 
+
+ 
+
+    background-color: #1c69d4;
+
+ 
+
+ 
+
+    border-color: #1c69d4;
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+table{
+
+ 
+
+ 
+
+border:1px solid black;
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+</style>
+
+ 
+
+ 
+
+</head>
+
+ 
+
+ 
+
+ 
+
+ 
+
+<body style="" class="">
+<script>
+function date() {
+  alert("Hello! I am an alert box!");
+}
+</script>
+
+<div align="center" class="container"><br />
+
+<div align="left" class="header" style="color: #f0e7e7;">
+
+<div class="top-bar">
+
+<div class="module" style="padding-left: 1%;">
+
+<div class="top-bar__logo"></div>
+
+<div class="ds2-printonly" style="padding-top: 5%; font-family: bmwTypeWebBoldAll,'Arial,'Helvetica,'sans-serif';">
+
+<h3>BMW Retail Marketing</h3>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!--<div class="logo">
+
+ 
+
+ 
+
+    <img src="https://10.6.3.9/nl/jsp/BMWUK_images/VOC/bmw_logo.png" alt="orderpic" height="120" width="500">
+
+ 
+
+ 
+
+</div>--><!-- SM Commented ul <ul class="nav nav-tabs"> --> <!--<li class="active" id="L1">Marketing Dashboard</li>--> <!-- </ul> -->
+
+<div class="tab-content" style="width: 80%;"><!-- Start of Order Tab -->
+
+<div class="tab-pane fade in active" id="home"><br />
+
+<div class="form-group" style="width: 88%;">
+<button onclick="date()">Try it</button>
+
+<table id="customers" style="border: 1px solid black; width: 100%; font-family: bmwTypeWebBoldAll,Arial,sans-serif,Helvetica;">
+
+<thead>
+
+<tr><th style="padding-left: 2px;" colspan="5">Order Details</th></tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Order No.:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">ODR201</span></td>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Order Name:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">This is my first order</span></td>
+
+</tr>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Order Status:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">active</span></td>
+
+</tr>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><b>End Date:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2"><input id="datepicker" type="text" placeholder="dd.mm.yyyy" /></span></td>
+
+<td height="5"><span style="font-size: small;"><button id="arin" type="button" style="background: #1c69d4; color: white; border: 1px solid #1c69d4; width: 150px;" onclick="date();">Submit</button></span></td>
+
+</tr>
+
+<tr></tr>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><input id="input155377310080952" style="background: #1c69d4; color: white; border: 1px solid #1c69d4; width: 150px;" type="submit" value="Email Preview" /></span></td>
+
+<td height="5"><span style="font-size: small;" size="2"><input id="input155413568858782" style="background: #1c69d4; color: white; border: 1px solid #1c69d4; width: 150px;" type="submit" value="Stop Now" onclick="date()" /></span></td>
+
+</tr>
+
+<tr>
+
+<td>&nbsp;</td>
+
+</tr>
+
+<tr style="height: 10px;"><th style="padding-left: 2px;" colspan="7">Campaign statistics</th></tr>
+
+<tr>
+
+<td></td>
+
+</tr>
+
+<tr></tr>
+
+<tr>
+
+<td>&nbsp;</td>
+
+</tr>
+
+<tr><th height="5" style="background: #999999; padding-top: 2px; padding-bottom: 2px; padding-left: 2px;" colspan="7"><span style="font-size: small;" size="2">Send statistics</span></th></tr>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Total email target:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">20000</span></td>
+
+</tr>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Sent:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">19000</span></td>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Failed:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">1000</span></td>
+
+</tr>
+
+<tr>
+
+<td>&nbsp;</td>
+
+</tr>
+
+<tr><th height="5" style="background: #999999; padding-top: 2px; padding-bottom: 2px; padding-left: 2px;" colspan="7"><span style="font-size: small;" size="2">Open statistics</span></th></tr>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Total Open:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">8000</span></td>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Distinct Open:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">6000</span></td>
+
+</tr>
+
+<tr>
+
+<td>&nbsp;</td>
+
+</tr>
+
+<tr style="height: 20%;"><th style="background: #999999; padding-top: 2px; padding-bottom: 2px; padding-left: 2px;" colspan="7"><span style="font-size: small;" size="2">Click statistics</span></th></tr>
+
+<tr>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Total Click:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">700</span></td>
+
+<td height="5"><span style="font-size: small;" size="2"><b>Distinct Click:</b></span></td>
+
+<td height="5"><span style="font-size: small;" size="2">625</span></td>
+
+<td></td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+<br /> <!--Ordered-->
+
+<div class="form-group" style="width: 88%;"><br /> <!-- Start of Order Tab >
+
+ 
+
+ 
+
+  <div id="home" class="tab-pane fade in active">
+
+ 
+
+ 
+
+  <br>
+
+ 
+
+ 
+
+<div class="form-group" style="width: 600px;">
+
+ 
+
+ 
+
+<table id="customers">
+
+ 
+
+ 
+
+<thead>
+
+ 
+
+ 
+
+          <th>Campaign #</th><th>Campaign Name</th><th>Status</th><th>Creation Date</th><th>Email Sent</th><th>Total Open</th><th>Total Click</th>
+
+ 
+
+ 
+
+        </thead>
+
+ 
+
+ 
+
+        <%== ctx.vars.localJob%>
+
+ 
+
+ 
+
+</table>
+
+ 
+
+ 
+
+</div>
+
+ 
+
+ 
+
+<br>
+
+ 
+
+ 
+
+--></div>
+
+</div>
+
+<!-- End of Order Tab --></div>
+
+
+
+<script type="text/javascript">// <![CDATA[
+function date() {
+	  alert("Hello! I am an alert box!");
+	}
+function next1()
+
+ 
+
+ 
+
+{
+
+ 
+
+ 
+
+  jQuery('#L2').removeClass('active');
+
+ 
+
+ 
+
+  jQuery('#L3').addClass('active');
+
+ 
+
+ 
+
+}
+
+ 
+
+ 
+
+function show1(){
+
+ 
+
+ 
+
+    document.getElementById('div1').style.display ='block';
+
+ 
+
+ 
+
+    document.getElementById('div2').style.display ='none';
+
+ 
+
+ 
+
+    document.getElementById('div3').style.display ='none';
+
+ 
+
+ 
+
+  }
+
+ 
+
+ 
+
+  function show2(){
+
+ 
+
+ 
+
+    document.getElementById('div2').style.display = 'block';
+
+ 
+
+ 
+
+    document.getElementById('div1').style.display ='none';
+
+ 
+
+ 
+
+    document.getElementById('div3').style.display ='none';
+
+ 
+
+ 
+
+  }
+
+ 
+
+ 
+
+  function show3(){
+
+ 
+
+ 
+
+    document.getElementById('div3').style.display = 'block';
+
+ 
+
+ 
+
+    document.getElementById('div2').style.display ='none';
+
+ 
+
+ 
+
+    document.getElementById('div1').style.display ='none';
+
+ 
+
+ 
+
+  }
+
+ 
+
+ 
+
+$( function() {
+
+ 
+
+  $('#datepicker').datepicker({ dateFormat: 'dd.mm.yy' }).val();
+
+ 
+
+  } );
+
+// ]]>
+
+function dateVal()
+
+{
+
+ }
+
+</script>
+
+</body>
+
+ 
+
+</html>

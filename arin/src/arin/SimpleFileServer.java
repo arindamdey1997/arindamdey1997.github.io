@@ -11,9 +11,9 @@ import java.net.Socket;
 public class SimpleFileServer {
 
   public final static int SOCKET_PORT = 13267;  // you may change this
-  public final static String FILE_TO_SEND = "C:\\Users\\761170\\workspace\\arin\\src\\arin\\ad.jpg";  // you may change this
+ // public final static String FILE_TO_SEND = "C:\\Users\\761170\\workspace\\arin\\src\\arin\\ad.jpg";  // you may change this
 
-  public void arin( ) throws IOException {
+  public void arin(String FILE_TO_SEND ) throws IOException {
     FileInputStream fis = null;
     BufferedInputStream bis = null;
     OutputStream os = null;
@@ -21,7 +21,7 @@ public class SimpleFileServer {
     Socket sock = null;
     try {
       servsock = new ServerSocket(SOCKET_PORT);
-      while (true) {
+      
         System.out.println("Waiting...");
         try {
           sock = servsock.accept();
@@ -43,7 +43,7 @@ public class SimpleFileServer {
           if (os != null) os.close();
           if (sock!=null) sock.close();
         }
-      }
+      
     }
     finally {
       if (servsock != null) servsock.close();

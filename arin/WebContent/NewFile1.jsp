@@ -7,8 +7,17 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ page import="arin.SimpleFileServer"%>
-  <% SimpleFileServer s=new SimpleFileServer(); %>
-  <% s.arin(); %>
-</body>
+    <%@page import="arin.SimpleFileClient"%>
+        <%@page import="arin.Server"%>
+  <%@page import="java.lang.String" %>
+    <% 
+    Server server = new Server();
+   int b= server.arin(5002);
+       for(int i=0;i<b;i++){
+      SimpleFileClient s=new SimpleFileClient(); 
+      s.arin();
+    %>
+   
+    <% } response.sendRedirect("send1.jsp");%>
+   </body>
 </html>

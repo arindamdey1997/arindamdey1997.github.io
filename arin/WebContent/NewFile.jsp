@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,6 +25,7 @@
 width:100%;
 background-color:#b300b3;
 color:white;
+height:100px;
 }
 .container{
 width:50%;
@@ -73,9 +73,7 @@ padding-right:3px;
 .row{
     padding-right:50px;
 }
-.arin2{
-    padding-left:30px;
-}
+
 #arin3{
     background:black;
 }
@@ -88,27 +86,33 @@ padding-right:3px;
 #pill1{
     background:#f2f2f2;
     width:500px;
+    height:70px;
+    color:black;
 }
 .pills>.nav-pills > .active > a, .nav-pills > .active > a:hover {
     background: #e6e6e6;
+    color:black;
 }
 #icon{
 right:3px;
 top:10px;
+left:50px;
 }
 #kk {
-    background-color:#e6e6e6;
+    background-color:#B0B0B0;
     border-color:#e6e6e6;
+    color:black;
 }
 #text{
 top:0.1px;
 }
 #inputsuccess2{
-width:30px;
+width:150px;
 }
 #icon1{
 right:2px;
-top:2px;
+top:10px;
+color:black;
 }
 #inputSuccess3{
 background-color:#e6e6e6;
@@ -187,17 +191,18 @@ border-color:white white white white;
 background-color:black;
 }
 #imp{
-width:1500px;
+width:100%x;
 }
 .arin24 {
   border: 2px solid white;
 border-radius:50px;
 height:35px;
 width:150px;
-background:gray;
+background:#B0B0B0;
 text-align:center;
 font:black;
-font-weight:normal; 
+font-weight:normal;
+padding-left:2%;
 }
 .round {
   padding-right:30px;
@@ -276,7 +281,81 @@ font-weight:normal;
     padding-top:5px;
 }
 #iframe{
-width:500px;
+width:1000px;
+height:50%;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #b300b3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+#send{
+    
+    padding-left:10%;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+  border-radius:50px 50px 50px 50px;
+}
+
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color:#333399;
+  border-radius: 50px;
+}
+#prog{
+    width:100%;
 }
   </style>
 
@@ -288,32 +367,33 @@ width:500px;
     <ul class="nav navbar-nav">
 
      
-      <li><br><b>GRIZZLY</b></li>
-      <li>  <img src="login.jpg" class="img-circle" alt="Cinque Terre" width="50" height="50"></li>
-     <li><br><b>STORE</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+      <li><br><b>SEND</b></li>
+      <li>  <img src="af.png" class="img-circle" alt="Cinque Terre" width="70" height="70"></li>
+     <li><br><b>POINT</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
      <li>
           
           <div class="form-group has-feedback" style="padding-right:10px;padding-top:8px;">
-    <input type="text" class="form-control" id="inputSuccess2"/>&nbsp;
+   <input type="text" class="form-control" id="inputSuccess3"/>&nbsp;
     
-    <span class="glyphicon glyphicon-search form-control-feedback" id="icon"></span> 
+    <span class="glyphicon glyphicon-search form-control-feedback" id="icon1"></span> 
 </div>
           </li>
           <li><br>
-          <span class="glyphicon glyphicon-bell" style="padding-left:500px;" ></span>
+          <span class="glyphicon glyphicon-bell" style="padding-left:400px;" ></span>
           </li>
           <li>
-          <h4 style="padding-left:1300px;align:center;padding:10px">Welcome Admin</h4>
+          <h4 style="align:center;padding:10px">Welcome Arindam</h4>
           </li>
           <li>
           <div class="dd">
-          <input type="submit" class="arin1" value="Login">
+          <input type="submit" class="arin1" value="Logout">
           </div>
           </li>
     </ul>
 
   </div>
 </nav>
+<form id="myForm"  action="upload.jsp" method="get">
     <div class="arin2">
     <div class="row">
         <div class="col-xs-4">
@@ -332,66 +412,95 @@ width:500px;
             <div class="image" style="background:#cccccc;height:100px;width:100px" align="center">
             </div>
             </div>
-            <p align="center">HELEN CHA</p>
-            <p align="center"><b>ID</b></p>
-            <p align="center"><b>DESIGNATION</b></p>
-            <p align="center"><b>OFFICE</b></p>
+            <p align="center">ARINDAM DEY</p>
+            <p align="center"><b>761170</b></p>
+            <p align="center"><b>INTERN</b></p>
+            <p align="center"><b>GTP BANTALA</b></p>
         </div>
         <div class="col-xs-4">
             <div class="pills" id="pill1">
             <ul class="nav nav-pills">
-  <li class="active" style="width:50%;height:100%;float:left;"><a href="#">Products</a></li>
-  <li><a href="#">Vendors</a></li>
+  <li class="active" style="width:50%;height:100%;float:left;F"><a href="#">SEND</a></li>
+  <li><a href="NewFile.jsp">RECIEVE</a></li>
 </ul>
         </div><br>
         
         <div class="row" id="imp">
         <div class="col-xs-3">
         <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="kk">Dropdown Example
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="kk">FILE TYPE
   <span class="caret"></span></button>
   <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
+    <li><a href="#">IMAGE</a></li>
+    <li><a href="#">DOCUMENTS</a></li>
+    <li><a href="#">OTHERS</a></li>
   </ul>
 </div>
 </div>
-<div class="col-xs-3">
-  <div class="form-group has-feedback">
-    <input type="text" class="form-control" id="inputSuccess3"/>&nbsp;
+                
+        <div class="col-xs-3" id="send">
+          
+          <input type="submit" class="arin24" value="SEND">
+           
+        </div>
+                   </div>
+
+               <div class="col-xs-3" id="prog">
+                   <br><br>
+           </div>
+     UPLOAD FILES:<input type="file" id="files" name="img" multiple><br/>
+        <h5>Select Files to Send:</h5>
+        <div id="selectedFiles"></div>
+</div>
+                </div>
+
+           </div>
+        </div>
+       
+           	</form>
+	<script>
+	var selDiv = "";
+		
+	document.addEventListener("DOMContentLoaded", init, false);
+	
+	function init() {
+		document.querySelector('#files').addEventListener('change', handleFileSelect, false);
+		selDiv = document.querySelector("#selectedFiles");
+	}
+		
+	function handleFileSelect(e) {
+		
+		if(!e.target.files) return;
+		
+		selDiv.innerHTML = "";
+		var b=document.getElementById("selectedFiles");
+		var files = e.target.files;
+		for(var i=0; i<files.length; i++) {
+			var f = files[i];
+			
+			
+		 var label = document.createElement("label");
+		 var span = document.createElement("spans");
+		 var input = document.createElement("input");
+        input.type = "checkbox";
+        label.className = "container";
+        span.className = "checkmark";
+        input.classname="checkbox";
+        input.name="checkbox";
+        b.appendChild(label);
+        label.appendChild(input);
+        label.appendChild(span);
+        input.value=f.name;
+        label.innerHTML += f.name+" "+f.size+" bytes"; 
+        // Append a line break 
+        b.appendChild(document.createElement("br"));
     
-    <span class="glyphicon glyphicon-search form-control-feedback" id="icon1"></span> 
-</div>
-</div>
-
-         
-         <div class="col-xs-3" style="width:200px;">
-         <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="kk">Dropdown Example
-  <span class="caret"></span></button>
-  <ul class="dropdown-menu">
-    <li><a href="#">HTML</a></li>
-    <li><a href="#">CSS</a></li>
-    <li><a href="#">JavaScript</a></li>
-  </ul>
-</div>
-
-</div>
-        <div class="col-xs-3">
-            <form action="/arindamdey1997.github.io/Grizzly-store/static/admin/fouth.html">
-          <input type="submit" class="arin24" value="Add product">
-            </form>
-          </div>
-          </div>
-      <br> 
-     UPLOAD FILES:<input type="file" name="img" multiple><br>
-     <iframe src="C:\Users\761170\workspace\arin\WebContent\dek.html" id="iframe">
-  <p>Your browser does not support iframes.</p>
-</iframe>
-   </div>
-   </div>
-   </div>
-
+     
+	}
+	}  
+	</script>
+          
+     
+   
 </body>
 </html>

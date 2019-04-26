@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<form action="upload.jsp" method="get">  
+<input type="file" name="img" multiple>
+ <input type="submit">
+</form>  
 </body>
 </html>
